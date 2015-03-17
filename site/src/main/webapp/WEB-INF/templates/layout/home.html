@@ -2,9 +2,9 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org"> <!--<![endif]-->
 
-<head th:include="/layout/partials/head (pageTitle='Broadleaf Demo - Heat Clinic')"></head>
+<head th:include="/layout/partials/head (pageTitle='bier4you')"></head>
 
 <body>
     <div id="notification_bar"></div>
@@ -35,6 +35,13 @@
     </div>
     
     <footer th:substituteby="layout/partials/footer" />
-    
+
+    <script blc:src="@{/js/libs/query-1.11.1.min.js}"></script>
+    <script blc:src="@{/js/libs/jquery-migrate-1.2.1.min.js}"></script>
+    <script blc:src="@{/js/libs/bootstrap.min.js}"></script>
+    <script blc:src="@{/js/libs/bootstrap-hover-dropdown.min.js}"></script>
+    <script blc:src="@{/js/libs/jquery.magnific-popup.min.js}"></script>
+    <script blc:src="@{/js/libs/owl.carousel.min.js}"></script>
+    <script blc:src="@{/js/libs/custom.js}"></script>
 </body>
 </html>
